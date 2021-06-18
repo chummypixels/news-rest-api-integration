@@ -4,8 +4,7 @@ import 'package:http/http.dart';
 import 'package:rest_api_integration/model/article_model.dart';
 
 class ApiService {
-  final endPointUrl =
-      'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=98c7a116cbb347199ccc7e240e8012d6';
+  final endPointUrl = 'YOUR_API_KEY';
   Future<List<Article>> getArticle() async {
     Response res = await get(Uri.parse(endPointUrl));
 
